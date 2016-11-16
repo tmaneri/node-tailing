@@ -1,7 +1,7 @@
 const fs = require('fs');
-const EventEmitter = require('events');
+const events = require('events');
 
-class Tailing extends EventEmitter {
+class Tailing extends events {
 
   getLinesFromBuffer()
   {
