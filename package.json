@@ -1,11 +1,15 @@
 {
   "name": "node-tailing",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Event-driven file tailing. Receive events when a file changes.",
   "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "babel src -d dist --presets es2015"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/tmaneri/node-tailing.git"
   },
   "keywords": [],
   "author": "",
