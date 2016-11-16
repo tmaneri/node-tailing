@@ -1,9 +1,9 @@
-var trailing = require('trailing');
+var tailing = require('tailing');
 
 var pattern = /^(\S+) (\S+) (\S+) \[([^:]+):(\d+:\d+:\d+) ([^\]]+)\] \"(\S+) (.*?) (\S+)\" (\S+) (\S+) "([^"]*)" "([^"]*)"/i;
-var trail = trailing('/var/log/apache2/access.log');
+var tail = tailing('/var/log/apache2/access.log');
 
-trail.on('line', function(line) {
+tail.on('line', function(line) {
   var matches = line.match(pattern);
   if (matches) {
     console.log(line);
